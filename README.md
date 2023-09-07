@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Optimizing build performance in Next.js :writing_hand:
 
-## Getting Started
+This is the code example for my article on [Optimizing build performance in Next.js](https://blog.logrocket.com) for [LogRocket](https://blog.logrocket.com).
 
-First, run the development server:
+Visit my blog, [Timonwa's Notes](https://blog.timonwa.com), for awesome technical content like articles, code snippets, tech goodies, community projects and more.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Please give this repo a ⭐ if it was helpful to you.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This demo is the code example for the article written by [Timonwa](https://blog.timonwa.co) for LogRocket on **Optimizing build performance in Next.js**. This demonstration shows how optimizing your Next.js app can improve your build performance. You can access the repo on [GitHub](https://github.com/Timonwa/optimising-nextjs-performance).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+I did not focus on optimizing the build performance in the **main** branch. I installed a few unnecessary npm packages on this branch, and I wanted to show you how the build performance is by default.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I have the following packages installed:
 
-## Learn More
+- react-icons (I only used one icon from this package. I could have just used an SVG or UTF-8 character)
+- react-accessible-accordion (Building my accordion would have been smaller in size)
+- react-hook-form (My form was simple. I could have used the HTML form element)
 
-To learn more about Next.js, take a look at the following resources:
+I optimized the build performance in the **optimized** branch. I removed the unnecessary packages and built my accordion and form. I also used the UTF-8 character for the icon.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+By running `yarn build` on both branches, one could see a big difference in the build performance of the affected pages in the **optimized** branch. The **form** and **accordion** pages on the optimized branch reduced significantly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Main build performance](./public/images/main-branch.png)
 
-## Deploy on Vercel
+_Main build performance_
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Optimized build performance](./public/images/optimized-branch.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+_Optimized build performance_
+
+The form page went from _8.14kb_ to _614b_ and the accordion page went from _4.74kb_ to _1.09kb_.
+
+This demo only demonstrates how using the right packages and building your components can improve your build performance. There are other ways to optimize your Next.js app. You can [read the article on LogRocket](https://blog.logrocket.com).

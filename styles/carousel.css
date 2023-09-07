@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-figure {
+.swiper figure {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -21,14 +21,14 @@ figure {
   position: relative;
 }
 
-img {
+.swiper img {
   display: block;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-figcaption {
+.swiper figcaption {
   position: absolute;
   bottom: 0;
   z-index: 10;

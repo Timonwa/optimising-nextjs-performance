@@ -59,6 +59,29 @@
   width: 100%;
   font-size: 1.5rem;
 }
+.imageContainer {
+  display: block;
+  max-width: 700px;
+  min-height: 100%;
+  border: 1px solid #eee;
+  margin-inline: auto;
+}
+
+.figure {
+  padding: 0;
+  margin: 1rem auto 2rem;
+  max-width: 700px;
+}
+.figure img {
+  width: 100%;
+  aspect-ratio: 5/3;
+}
+.figure figcaption {
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+}
 
 .footer {
   padding: 2rem 0;

@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
           </Link>
         </nav>
       </header>
-      <Component {...pageProps} />{" "}
+      <Component {...pageProps} />
       <footer className={styles.footer}>
         <p>
           Created by{" "}

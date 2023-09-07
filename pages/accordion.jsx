@@ -27,7 +27,7 @@ const AccordionPage = () => {
       </div>
 
       <div className={styles.description}>
-        <Accordion>
+        <Accordion allowZeroExpanded>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>

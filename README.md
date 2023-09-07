@@ -20,7 +20,7 @@ I have the following packages installed:
 
 I optimized the build performance in the **optimized** branch. I removed the unnecessary packages and built my accordion and form. I also used the UTF-8 character for the icon.
 
-By running `yarn build` on both branches, one could see a big difference in the build performance of the affected pages in the **optimized** branch. The **form** and **accordion** pages on the optimized branch reduced significantly.
+By running `yarn build` on both branches, one could see a big difference in the build size of the affected pages in the **optimized** branch. The **form** and **accordion** pages on the optimized branch were reduced significantly.
 
 ![Main build performance](./public/images/main-branch.png)
 

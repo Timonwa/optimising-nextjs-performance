@@ -64,9 +64,9 @@ export default function Home() {
 
         <p>
           By running `yarn build` on both branches, one could see a big
-          difference in the build performance of the pages in the{" "}
+          difference in the build size of the pages in the{" "}
           <strong>optimized</strong> branch. The form and accordion pages on the
-          optimized branch reduced significantly.
+          optimized branch were reduced significantly.
         </p>
         <figure className={styles.figure}>
           <img

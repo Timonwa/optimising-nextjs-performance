@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +15,7 @@ import image3 from "../public/images/image3.jpg";
 import image4 from "../public/images/image4.jpg";
 import image5 from "../public/images/image5.jpg";
 import image6 from "../public/images/image6.jpg";
+import Image from "next/image";
 
 const Carousel = () => {
   return (
@@ -63,7 +63,7 @@ const Carousel = () => {
             className="mySwiper">
             <SwiperSlide>
               <figure>
-                <img src={image1.src} alt="" />
+                <Image src={image1} alt="" fill placeholder="blur" />
                 <figcaption>
                   Photo by{" "}
                   <Link href="https://unsplash.com/@tommykwak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -78,7 +78,7 @@ const Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <figure>
-                <img src={image2.src} alt="" />
+                <Image src={image2} alt="" fill placeholder="blur" />
                 <figcaption>
                   Photo by{" "}
                   <a href="https://unsplash.com/@chrisabney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -93,7 +93,7 @@ const Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <figure>
-                <img src={image3.src} alt="" />
+                <Image src={image3} alt="" fill placeholder="blur" />
                 <figcaption>
                   Photo by{" "}
                   <a href="https://unsplash.com/@craig_bradford?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -108,7 +108,7 @@ const Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <figure>
-                <img src={image4.src} alt="" />
+                <Image src={image4} alt="" fill placeholder="blur" />
                 <figcaption>
                   Photo by{" "}
                   <a href="https://unsplash.com/@erikvandijk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -123,7 +123,7 @@ const Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <figure>
-                <img src={image5.src} alt="" />
+                <Image src={image5} alt="" fill placeholder="blur" />
                 <figcaption>
                   Photo by{" "}
                   <a href="https://unsplash.com/@lightscape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -138,7 +138,7 @@ const Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <figure>
-                <img src={image6.src} alt="" />
+                <Image src={image6} alt="" fill placeholder="blur" />
                 <figcaption>
                   Photo by{" "}
                   <a href="https://unsplash.com/@somonesummers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">

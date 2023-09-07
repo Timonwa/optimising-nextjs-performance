@@ -22,14 +22,14 @@ I optimized the build performance in the **optimized** branch. I removed the unn
 
 By running `yarn build` on both branches, one could see a big difference in the build size of the affected pages in the **optimized** branch. The **form** and **accordion** pages on the optimized branch were reduced significantly.
 
-![Main build performance](./public/images/main-branch.png)
+![Main branch build size](./public/images/main-branch.png)
 
-_Main build performance_
+_Main branch build size_
 
-![Optimized build performance](./public/images/optimized-branch.png)
+![Optimized branch build size](./public/images/optimized-branch.png)
 
-_Optimized build performance_
+_Optimized branch build size_
 
 The form page went from _8.14kb_ to _614b_ and the accordion page went from _4.74kb_ to _1.09kb_.
 
-This demo only demonstrates how using the right packages and building your components can improve your build performance. There are other ways to optimize your Next.js app. You can [read the article on LogRocket](https://blog.logrocket.com).
+This demo only demonstrates how using the right packages and building your components can improve your build performance. There are other ways to optimize your Next.js app. You can read the article on [LogRocket](https://blog.logrocket.com).

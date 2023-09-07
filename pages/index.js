@@ -71,19 +71,19 @@ export default function Home() {
         <figure className={styles.figure}>
           <img
             src="/images/main-branch.png"
-            alt="main build performance"
+            alt="main branch build size"
             fill
           />
-          <figcaption>Main build performance</figcaption>
+          <figcaption>Main branch build size</figcaption>
         </figure>
 
         <figure className={styles.figure}>
           <img
             src="/images/optimized-branch.png"
-            alt="optimized build performance"
+            alt="optimized branch build size"
             fill
           />
-          <figcaption>Optimized build performance</figcaption>
+          <figcaption>Optimized branch build size</figcaption>
         </figure>
 
         <p>

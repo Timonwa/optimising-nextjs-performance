@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
@@ -15,26 +16,90 @@ export default function Home() {
           <Link target="_blank" href="https://blog.timonwa.com">
             Timonwa
           </Link>{" "}
-          for LogRocket on{" "}
-          <strong>Optimizing build performance in Next.js</strong>. It is a
-          simple demonstration of optimizing your build, and I created a repo
-          with two branches to show the difference in build time.
-        </p>
-
-        <p>
-          The <strong>main</strong> branch has the code without any
-          optimization, while the <strong>optimized</strong> branch has the code
-          with the optimization. You can access the repo on{" "}
-          <Link target="_blank" href="">
-            Github
+          for{" "}
+          <Link target="_blank" rel="noopener noreferrer" href="#">
+            LogRocket
+          </Link>{" "}
+          on <strong>Optimizing build performance in Next.js</strong>. This
+          demonstration shows how optimizing your Next.js app can improve your
+          build performance. You can access the repo on{" "}
+          <Link
+            target="_blank"
+            href="https://github.com/Timonwa/optimising-nextjs-performance">
+            GitHub
           </Link>
           .
         </p>
 
         <p>
-          I have a couple of npm packages installed for this branch that I can
-          do without. I also have a couple of fonts imported from Google Fonts,
-          a couple of images, and some files that I am not using in the project.
+          I did not focus on optimizing the build performance in the{" "}
+          <strong>main</strong> branch. I installed a few unnecessary npm
+          packages on this branch, and I wanted to show you how the build
+          performance is by default.
+        </p>
+
+        <p>
+          I have the following packages installed:
+          <ul>
+            <li>
+              react-icons (I only used one icon from this package. I could have
+              just used an SVG or UTF-8 character)
+            </li>
+            <li>
+              react-accessible-accordion (Building my accordion would have been
+              smaller in size)
+            </li>
+            <li>
+              react-hook-form (my form was simple. I could have used the HTML
+              form element)
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          I optimized the build performance in the <strong>optimized</strong>{" "}
+          branch. I removed the unnecessary packages and built my accordion and
+          form. I also used the UTF-8 character for the icon.
+        </p>
+
+        <p>
+          By running `yarn build` on both branches, one could see a big
+          difference in the build performance of the pages in the{" "}
+          <strong>optimized</strong> branch. The form and accordion pages on the
+          optimized branch reduced significantly.
+        </p>
+        <figure className={styles.figure}>
+          <img
+            src="/images/main-branch.png"
+            alt="main build performance"
+            fill
+          />
+          <figcaption>Main build performance</figcaption>
+        </figure>
+
+        <figure className={styles.figure}>
+          <img
+            src="/images/optimized-branch.png"
+            alt="optimized build performance"
+            fill
+          />
+          <figcaption>Optimized build performance</figcaption>
+        </figure>
+
+        <p>
+          The form page went from <strong>8.14kb</strong> to{" "}
+          <strong>614b</strong> and the accordion page went from{" "}
+          <strong>4.74kb</strong> to <strong>1.09kb</strong>.
+        </p>
+
+        <p>
+          This demo only demonstrates how using the right packages and building
+          your components can improve your build performance. There are other
+          ways to optimize your Next.js app. You can read the article on{" "}
+          <Link target="_blank" rel="noopener noreferrer" href="#">
+            LogRocket
+          </Link>
+          .
         </p>
       </div>
     </main>

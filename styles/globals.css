@@ -8,6 +8,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
 a {
   color: inherit;
 }

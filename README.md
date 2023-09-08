@@ -28,9 +28,9 @@ In the `unused-dependencies` branch, I installed a few unnecessary dependencies 
 ![unused-dependencies build size](./public/images/unused-dependencies-branch.png)
 _unused-dependencies build size_
 
-The `Form` and `Accordion` pages on the optimized branch were increased from _614b_ to _8.14kb_, and _1.512kb_ to _4.74kb_ respectively.
+The `Form` and `Accordion` pages on the optimized branch were increased from _844b_ to _8.416kb_, and _1.37kb_ to _4.62kb_ respectively.
 
-In the `unnecessary-imports` branch, I imported some CSS files into the `Accordion` page that I am not using. The accordion page increased from _1.512kb_ to _5.38kb_.
+In the `unnecessary-imports` branch, I imported some CSS files into the `Accordion` page that I am not using. The accordion page size increased from _1.37kb_ to _5.26kb_.
 
 ![unnecessary-imports build size](./public/images/unnecessary-imports-branch.png)
 _unnecessary-imports build size_

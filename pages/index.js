@@ -38,23 +38,22 @@ export default function Home() {
           performance is by default.
         </p>
 
-        <p>
-          I have the following packages installed:
-          <ul>
-            <li>
-              react-icons (I only used one icon from this package. I could have
-              just used an SVG or UTF-8 character)
-            </li>
-            <li>
-              react-accessible-accordion (Building my accordion would have been
-              smaller in size)
-            </li>
-            <li>
-              react-hook-form (my form was simple. I could have used the HTML
-              form element)
-            </li>
-          </ul>
-        </p>
+        <p>I have the following packages installed: </p>
+
+        <ul>
+          <li>
+            react-icons (I only used one icon from this package. I could have
+            just used an SVG or UTF-8 character)
+          </li>
+          <li>
+            react-accessible-accordion (Building my accordion would have been
+            smaller in size)
+          </li>
+          <li>
+            react-hook-form (my form was simple. I could have used the HTML form
+            element)
+          </li>
+        </ul>
 
         <p>
           I optimized the build performance in the <strong>optimized</strong>{" "}

@@ -1,6 +1,5 @@
 import { Accordion } from "../components/Accordion";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

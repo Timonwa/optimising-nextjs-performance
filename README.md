@@ -8,30 +8,31 @@ Please give this repo a ⭐ if it was helpful to you.
 
 ## Description
 
-This demo is the code example for the article written by [Timonwa](https://blog.timonwa.co) for LogRocket on **Optimizing build performance in Next.js**. This demonstration shows how optimizing your Next.js app can improve your build performance. You can access the repo on [GitHub](https://github.com/Timonwa/optimising-nextjs-performance).
+This demonstration shows how optimizing your Next.js app can improve your build performance. You can access the repo on [GitHub](https://github.com/Timonwa/optimising-nextjs-performance).
 
-I did not focus on optimizing the build performance in the **main** branch. I installed a few unnecessary npm packages on this branch, and I wanted to show you how the build performance is by default.
+- The **main** branch is the optimized.
+- The **unused-dependencies** branch has some unnecessary dependencies.
+- In the **unnecessary-imports** branch, I imported unused css files into one of my pages.
 
-I have the following packages installed:
+By running `yarn build` on all branches, one could see a significant increase in the build size of the affected pages in the **main** branch.
 
-- react-icons (I only used one icon from this package. I could have just used an SVG or UTF-8 character)
-- react-accessible-accordion (Building my accordion would have been smaller in size)
-- react-hook-form (My form was simple. I could have used the HTML form element)
+![main branch build size](./public/images/main-branch.png)
+_main branch build size_
 
-I optimized the build performance in the **optimized** branch. I removed the unnecessary packages and built my accordion and form. I also used the UTF-8 character for the icon.
+In the `unused-dependencies` branch, I installed a few unnecessary dependencies like:
 
+- react-icons (I only need 1 icon; using an SVG is better)
+- react-accessible-accordion (Building a customized accordion is easy and smaller in size)
+- react-hook-form (For a simple form, this package was overkill).
 
-By running `yarn build` on both branches, one could see a big difference in the build size of the affected pages in the **optimized** branch. The **form** and **accordion** pages on the optimized branch were reduced significantly.
+![unused-dependencies build size](./public/images/unused-dependencies-branch.png)
+_unused-dependencies build size_
 
-![Main branch build size](./public/images/main-branch.png)
+The `Form` and `Accordion` pages on the optimized branch were increased from _614b_ to _8.14kb_, and _1.512kb_ to _4.74kb_ respectively.
 
-_Main branch build size_
+In the `unnecessary-imports` branch, I imported some CSS files into the `Accordion` page that I am not using. The accordion page increased from _1.512kb_ to _5.38kb_.
 
-![Optimized branch build size](./public/images/optimized-branch.png)
+![unnecessary-imports build size](./public/images/unnecessary-imports-branch.png)
+_unnecessary-imports build size_
 
-_Optimized branch build size_
-
-The form page went from _8.14kb_ to _614b_ and the accordion page went from _4.74kb_ to _1.09kb_.
-
-This demo only demonstrates how using the right packages and building your components can improve your build performance. There are other ways to optimize your Next.js app. You can read the article on [LogRocket](https://blog.logrocket.com).
-
+This demo only demonstrates a few ways to optimize your Next.js app. There are other ways to optimize your Next.js app. You can read the article on [LogRocket](https://blog.logrocket.com).

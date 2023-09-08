@@ -22,19 +22,6 @@ const Carousel = () => {
     <main className={styles.main}>
       <h1 className={styles.title}>Carousel Page</h1>
 
-      <div>
-        <p>
-          I am using the{" "}
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://swiperjs.com/react">
-            Swiperjs
-          </Link>{" "}
-          package.
-        </p>
-      </div>
-
       <div className={styles.description}>
         <Swiper
           pagination={{

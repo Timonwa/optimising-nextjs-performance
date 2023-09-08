@@ -15,8 +15,18 @@ const FormPage = () => {
         {/* "handleSubmit" will validate your inputs before invoking "onSubmit"
          */}
         <form onSubmit={(e) => handleSubmit(e)} className={formStyles.form}>
-          <input className={formStyles.input} placeholder="Name" required />
-          <input className={formStyles.input} placeholder="Email" required />
+          <input
+            className={formStyles.input}
+            placeholder="Name"
+            type="text"
+            required
+          />
+          <input
+            className={formStyles.input}
+            placeholder="Email"
+            type="email"
+            required
+          />
 
           <input className={formStyles.button} type="submit" />
         </form>

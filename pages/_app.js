@@ -2,10 +2,6 @@ import "../styles/globals.css";
 import "../styles/carousel.css";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 function MyApp({ Component, pageProps }) {
   return (

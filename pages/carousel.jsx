@@ -1,6 +1,10 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import styles from "../styles/Home.module.css";
@@ -17,19 +21,6 @@ const Carousel = () => {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Carousel Page</h1>
-
-      <div>
-        <p>
-          I am using the{" "}
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://swiperjs.com/react">
-            Swiperjs
-          </Link>{" "}
-          package.
-        </p>
-      </div>
 
       <div className={styles.description}>
         <Swiper

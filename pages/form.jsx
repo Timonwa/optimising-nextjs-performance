@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css";
 import formStyles from "../styles/form.module.css";
-import Link from "next/link";
 
 const FormPage = () => {
   const handleSubmit = (e) => {
@@ -11,19 +10,6 @@ const FormPage = () => {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Form Page</h1>
-
-      <div>
-        <p>
-          I am using the{" "}
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.npmjs.com/package/react-hook-form">
-            react-hook-form
-          </Link>{" "}
-          package.
-        </p>
-      </div>
 
       <div className={styles.description}>
         {/* "handleSubmit" will validate your inputs before invoking "onSubmit"

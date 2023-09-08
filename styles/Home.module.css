@@ -48,17 +48,11 @@
   text-align: center;
 }
 
-.em {
-  display: block;
-  margin-top: 1rem;
-  font-size: initial;
-  font-weight: 400;
-}
-
 .description {
   width: 100%;
   font-size: 1.5rem;
 }
+
 .imageContainer {
   display: block;
   max-width: 700px;

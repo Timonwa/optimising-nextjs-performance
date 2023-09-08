@@ -1,24 +1,10 @@
 import { Accordion } from "../components/Accordion";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
 
 const AccordionPage = () => {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Accordion Page</h1>
-
-      <div>
-        <p>
-          I am using the{" "}
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.npmjs.com/package/react-accessible-accordion">
-            react-accessible-accordion
-          </Link>{" "}
-          package.
-        </p>
-      </div>
 
       <div className={styles.description}>
         <Accordion

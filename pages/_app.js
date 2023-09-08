@@ -2,6 +2,14 @@ import "../styles/globals.css";
 import "../styles/carousel.css";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
 
 function MyApp({ Component, pageProps }) {
   return (
